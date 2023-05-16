@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Reproducible Run",
+            "type": "shell",
+            "command": "sh .reproducible_run/run.sh"
+        },
+        {
+            "label": "Simple Run",
+            "type": "shell",
+            "command": "echo Here is a simple run"
+        }
+    ]
+}
