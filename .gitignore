@@ -127,5 +127,5 @@ deploy/
 **/.DS_Store
 cdk.out/
 /models/
-# /results/
-# /data/
+/results/
+/data/
