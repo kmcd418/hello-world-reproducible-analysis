@@ -5,7 +5,7 @@ from sagemaker.estimator import Framework
 
 
 def get_config():
-    with open("configuration/config.yaml") as f:
+    with open("environment/config.yaml") as f:
         config = yaml.load(f, Loader=yaml.SafeLoader)
     return config
 

@@ -4,15 +4,15 @@
 # GET CAPSULE NAME AND GENERATE CAPSULE VERSION
 ##################
 # Read the YAML file
-yaml=$(cat configuration/config.yaml)
+yaml=$(cat environment/config.yaml)
 
-CAPSULE_NAME=$(echo "$yaml" | sed -n 's/^ *capsule: *//p')
+CAPSULE_NAME=${PWD##*/} # get name from parent directory
 CAPSULE_BUCKET=$(echo "$yaml" | sed -n 's/^ *s3_bucket: *//p')
 CAPSULE_VERSION=$(uuidgen | cut -c-8)
 
-##################
-# VERSIONING DATASET
-##################
+#################
+VERSIONING DATASET
+#################
 echo "===== VERSIONING DATASET ====="
 dvc remote remove s3bucket
 dvc remote add -d s3bucket "${CAPSULE_BUCKET}/${CAPSULE_NAME}"

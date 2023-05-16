@@ -1,4 +1,3 @@
 run:
-    capsule: <ADD CAPSULE NAME HERE>
     s3_bucket: <ADD YOUR BUCKET HERE>
     instance_type: ml.m5.xlarge
