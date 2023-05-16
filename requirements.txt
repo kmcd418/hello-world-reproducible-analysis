@@ -1,4 +1,4 @@
 dvc
-dvc_s3
+dvc-s3
 pyyaml
 sagemaker
