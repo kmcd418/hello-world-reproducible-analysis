@@ -15,17 +15,6 @@ ANALYSIS_BUCKET="s3://sagemaker-${AWS_REGION}-${AWS_ACCOUNT}"
 #################
 # VERSIONING DATASET
 #################
-echo "===== VERSIONING DATASET ====="
-# Check if DVC remote exists
-if dvc remote list | grep 's3bucket' >/dev/null 2>&1; then
-    echo "DVC config setup. Nothing to add"
-    dvc remote remove s3bucket
-    dvc remote add -d s3bucket "${ANALYSIS_BUCKET}/${ANALYSIS_NAME}"
-else
-    echo "DVC config not setup. Adding..."
-    dvc remote add -d s3bucket "${ANALYSIS_BUCKET}/${ANALYSIS_NAME}"
-fi
-
 dvc add data/
 dvc push
 
