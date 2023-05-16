@@ -1,4 +1,4 @@
-# amazon-sagemaker-reproducible-capsule
+# amazon-sagemaker-reproducible-analysis
 
 
 ## Initialise the capsule
