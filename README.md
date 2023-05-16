@@ -1,3 +1,7 @@
 # amazon-sagemaker-reproducible-capsule
 
-Example readme file
+
+## Initialise the capsule
+```
+sh .reproducible_run/initialise_capsule.sh
+```

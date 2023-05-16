@@ -68,9 +68,9 @@ docker push ${CONTAINER_FULLNAME}
 # LAUNCH JOB IN SAGEMAKER
 ##################
 echo "===== RUNNING THE CAPSULE ON AWS ====="
-# python .reproducible_run/job.py \
-#     --job_name ${CAPSULE_NAME}-${CAPSULE_VERSION} \
-#     --container_image ${CONTAINER_FULLNAME} \
-#     --entrypoint code/entrypoint.sh
+python .reproducible_run/job.py \
+    --job_name ${CAPSULE_NAME}-${CAPSULE_VERSION} \
+    --container_image ${CONTAINER_FULLNAME} \
+    --entrypoint code/entrypoint.sh
 
 echo "===== CAPSULE EXECUTED SUCCESSFULLY ====="
