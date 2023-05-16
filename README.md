@@ -1,7 +1,7 @@
 # amazon-sagemaker-reproducible-analysis
 
 
-## Initialise the capsule
+## Initialise the analysis
 
 Open the terminal and run the capsule initilisation script with the following command:
 ```
