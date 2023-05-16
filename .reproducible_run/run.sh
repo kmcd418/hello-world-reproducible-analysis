@@ -73,8 +73,4 @@ echo "===== RUNNING THE CAPSULE ON AWS ====="
 #     --container_image ${CONTAINER_FULLNAME} \
 #     --entrypoint code/entrypoint.sh
 
-sleep 7s
-
-echo "===== SAVING RESULTS ====="
-
 echo "===== CAPSULE EXECUTED SUCCESSFULLY ====="
